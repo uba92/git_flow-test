@@ -14,6 +14,8 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.UUID;
 
+//cerca come riprendere a lavorare sulla feature scegli_tratta con git flow
+
 public class Main {
     public static void main(String[] args) {
 
