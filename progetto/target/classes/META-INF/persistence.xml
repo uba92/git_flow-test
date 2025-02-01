@@ -1,0 +1,22 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.1">
+    <persistence-unit name="gestioneTrasporti">
+
+        <class>main.Entities.Abbonamento</class>
+        <class>main.Entities.Utente</class>
+        <class>main.Entities.Tessera</class>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="jakarta.persistence.jdbc.url"
+                value="jdbc:postgresql://dpg-cubklf9opnds73ek432g-a.frankfurt-postgres.render.com:5432/java_db_epicode" />
+            <property name="jakarta.persistence.jdbc.user" value="java_db_epicode_user" />
+            <property name="jakarta.persistence.jdbc.password"
+                value="NNv7hjI9ffnccoAPckKAUYzMC5HiOWYZ" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <property name="hibernate.show_sql" value="false" />
+            <property name="hibernate.format_sql" value="true" />
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
