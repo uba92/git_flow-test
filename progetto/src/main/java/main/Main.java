@@ -405,21 +405,24 @@ public class Main {
 
         if (ritorno > 0) {
             System.out.println("\nSe sei registrato premi '1', altrimenti premi '2':");
-            System.out.print("Scelta : ");
-            int scelta = scanner.nextInt();
 
-            if (scelta >= 0) {
+            int scelta = 0;
+
+            while (scelta != 1 && scelta != 2) {
+
+                System.out.print("Scelta : ");
+                scelta = scanner.nextInt();
 
                 if (scelta == 1) {
                     gestisciUtenteRegistrato(scanner);
-                } else {
+                } else if (scelta == 2) {
                     gestisciNuovoUtente(scanner);
+                } else {
+                    System.out.println("Scelta non valida! Inserire un numero valido!");
                 }
 
-            } else {
-                System.out.println("Opzione non valida !");
-                return;
             }
+
         }
 
     }
